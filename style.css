@@ -37,14 +37,13 @@ body{
     background-color: var(--color2);
     font-family: 'Montserrat', sans-serif;
 }
-.menu_icon{
+.icon_menu svg{
+    fill: #364f6b;
+    width: 35px;
+    height: 35px;
     position: fixed;
-    width: 38px;
-    height: 38px;
-    z-index: 20;
-    padding: 0;
     left: 10%;
-    top: 3px;
+    top: 5px;
 }
 nav{
     height: 6.5vh;
@@ -98,15 +97,14 @@ main{
     font-size: 15px;
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 500px) {
     main{
         width: 97%;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,1fr) !important;
         grid-gap: 5px;
     }
-    .menu_icon{
-        left: 1.5%;
-        top: 5px;
+    .icon_menu svg{
+        left: 3%;
     }
 }
 
@@ -116,10 +114,6 @@ main{
         grid-template-columns: repeat(2,1fr);
         grid-gap: 5px;
     }
-    .menu_icon{
-        left: 1.5%;
-        top: 1.5px;
-    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -127,9 +121,5 @@ main{
         width: 97%;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 5px;
-    }
-    .menu_icon{
-        left: 1.5%;
-        top: 1.5px;
     }
 }
