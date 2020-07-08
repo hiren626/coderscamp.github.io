@@ -45,6 +45,11 @@ body{
     left: 10%;
     top: 6.5vh;
     transform: translateY(-100%);
+    transition: all 320ms 40ms ease-in-out;
+
+}
+.icon_menu svg:hover{
+    fill: var(--color5);
 }
 nav{
     height: 6.5vh;
